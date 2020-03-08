@@ -22,4 +22,13 @@ Javascript or python dosent really care var a= "hello" and then change a=123
 DATATYPES
 bool, string, int, float64
 
-use := whrn creating a variable only
+use := when creating a variable only
+
+Functions in go always has a return typed
+func funcName() returnType {
+    return type
+}
+
+use _ when you dont want to use a variable name
+
+arrays fruits[0:2] -> gives index 0 and 1 
