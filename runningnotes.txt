@@ -1,0 +1,25 @@
+go build hello.go --> creates a binary executable
+go run hello.go  --> compiles and executes the go program
+go fmt --> format code
+go install --> compiles anf installs a package
+go get --> downloads raw source coe eot soemone else package
+go test -> run tests
+
+
+types of packages
+executable --> generates a file that we run
+resusable  --> code used as helpers plavce to put reusable logic
+
+package main --> use it only when you need an executable
+package calc --> defines a package tat can be used as a dependency
+
+import "fmt" --> install a package (default: builtin packages)  documentation: golang.org/pkg
+package main always requires a func main to be declared
+
+Java & Go are statically typed languages (you delcare int or string before hand)
+Javascript or python dosent really care var a= "hello" and then change a=123
+
+DATATYPES
+bool, string, int, float64
+
+use := whrn creating a variable only
