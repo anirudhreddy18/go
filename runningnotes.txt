@@ -35,3 +35,7 @@ arrays fruits[0:2] -> gives index 0 and 1
 
 value types int float string bool structs. (cpoy by value)
 reference types: slices, maps, channels, pointers, functions (copy by address)
+
+Interfaces
+
+
