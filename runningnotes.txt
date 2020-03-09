@@ -37,5 +37,6 @@ value types int float string bool structs. (cpoy by value)
 reference types: slices, maps, channels, pointers, functions (copy by address)
 
 Interfaces
-
+struct can contain interfaces
+interfaces can have interfaces for example if you want a class implementing multiple interfaces
 
