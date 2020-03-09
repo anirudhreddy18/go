@@ -32,3 +32,6 @@ func funcName() returnType {
 use _ when you dont want to use a variable name
 
 arrays fruits[0:2] -> gives index 0 and 1 
+
+value types int float string bool structs. (cpoy by value)
+reference types: slices, maps, channels, pointers, functions (copy by address)
