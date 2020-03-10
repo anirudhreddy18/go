@@ -40,3 +40,35 @@ Interfaces
 struct can contain interfaces
 interfaces can have interfaces for example if you want a class implementing multiple interfaces
 
+Concurrency
+
+Go Routines are like Threads in Java
+
+you can start a go routine with go func() and only used for functions
+
+Main Routine starts the process if it sees a go keyword it runs the function in a go routine. Then we get a blocking http call so new go routine says i am doing nothing so main routine kicks in and executes the new loop again and it starts a new go routine again.
+
+By default go uses only 1 cpu core so the scheduler switches between multiple go routines fastly
+but when we use multiple cores each go routine runs on a separate core
+
+concurrency : only 1 cpu core but we can schedule multiple go routines but only 1 go routine runs at same time.Scheduler can switch fastly
+parallelism: means multiple cores executing multiple go routines
+
+Our program can have
+main routine --> the main program
+child routine 
+child routine
+child routine. --> these are created with go keyword
+
+channels
+Main routine exits whrn the code is done inside main method it dosent wait if child go routines are being executed
+Channels solves this problem main routines only exist after all child go routines are done
+
+ypu can send message to channel and receive a message from channel\
+
+syntax 
+c := make(chan string) --> making a channle of type string
+c <- "hello". passing a value to channel
+fmt.println(<- c)  reading and printing value to channel
+
+receiving a message form channel is a blocking operation so main routine waits until a message is published to chanel
