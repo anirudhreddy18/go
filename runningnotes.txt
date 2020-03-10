@@ -71,4 +71,10 @@ c := make(chan string) --> making a channle of type string
 c <- "hello". passing a value to channel
 fmt.println(<- c)  reading and printing value to channel
 
-receiving a message form channel is a blocking operation so main routine waits until a message is published to chanel
+receiving a message form channel is a blocking operation so main routine waits until a message is published to channel
+
+repeating routines inside a for loop again execute the function
+
+use function literal if u want to a routine to start immedialtely and then wait few seconds to do the same. routine work
+
+when u pass some value to channel then main program will never exit unless there is somehting that receives the value from channel 
